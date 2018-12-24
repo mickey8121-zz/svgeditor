@@ -1,0 +1,114 @@
+body{
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+#svg_window{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+svg{
+  border:2px dotted grey;
+  background-color: white;
+}
+
+button{
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px
+}
+
+input{
+  border: 1px solid white;
+  border-radius: 10px;
+
+  &[type=range]{
+    -webkit-appearance: none;
+
+    &::-webkit-slider-thumb{
+      -webkit-appearance: none;
+      border: 1px solid #000000;
+      height: 22px;
+      width: 10px;
+      border-radius: 6px;
+      background: #ffffff;
+      cursor: pointer;
+      margin-top: -7px;
+      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    }
+
+    &::-moz-range-thumb {
+      border: 1px solid #000000;
+      height: 22px;
+      width: 10px;
+      border-radius: 6px;
+      background: #ffffff;
+      cursor: pointer;
+      margin-top: -7px;
+      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    }
+
+    &::-ms-thumb {
+      border: 1px solid #000000;
+      height: 22px;
+      width: 10px;
+      border-radius: 6px;
+      background: #ffffff;
+      cursor: pointer;
+      margin-top: -7px;
+      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    }
+
+    &::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 8px;
+      cursor: pointer;
+      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+      background: #3071a9;
+      border-radius: 3px;
+      border: 0.2px solid #010101;
+    }
+
+    &:focus{
+      outline: none;
+
+      &::-webkit-slider-runnable-track {
+        background: #367ebd;
+      }
+    }
+  }
+}
+
+select{
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+#sizeSVG{
+  text-align: center;
+
+  & input{
+    width: 200px;
+  }
+}
+
+#valueWigth{
+  display: inline-block;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+#valueHeight{
+  @extend #valueWigth;
+}
+
+#pointSizeValue{
+  width: 80%;
+  margin-left: 14%;
+  text-align: center;
+}

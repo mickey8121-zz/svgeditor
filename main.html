@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>Graphics editor</title>
+</head>
+<body>
+  <div id="svg_window"></div>
+
+  <br>
+
+  <div id="sizeSVG">
+    <input id="widthSVG" type="range" name="width" min="300" max="1600" value="1100" step="5">
+    <input id="heightSVG" type="range" name="height" min="170" max="900" value="620" step="5">
+    <br>
+    <div id="valueWigth"></div>
+    <div id="valueHeight"></div>
+  </div>
+
+  <div>
+    <button id="btnClear" type="button" name="button">Clear the field</button>
+  </div>
+
+  <br>
+  <br>
+
+  <div id="selectors">
+    Points color:
+    <select id="circleColor" name="">
+      <option value="black">black</option>
+      <option value="gray">gray</option>
+      <option value="gold">gold</option>
+      <option value="red">red</option>
+      <option value="blue">blue</option>
+      <option value="green">green</option>
+      <option value="yellow">yellow</option>
+      <option value="orange">orange</option>
+      <option value="purple">purple</option>
+      <option value="pink">pink</option>
+    </select>
+    Lines color:
+    <select id="lineColor" name="">
+      <option value="black">black</option>
+      <option value="gray">gray</option>
+      <option value="gold">gold</option>
+      <option value="red">red</option>
+      <option value="blue">blue</option>
+      <option value="green">green</option>
+      <option value="yellow">yellow</option>
+      <option value="orange">orange</option>
+      <option value="purple">purple</option>
+      <option value="pink">pink</option>
+    </select>
+
+    <button id="changeColor">Enter</button>
+
+    <br>
+    <br>
+    Number lines:
+    <select id="numberLines" name="">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2" selected>2</option>
+      <option value="3">3</option>
+    </select>
+    <br>
+    <br>
+    Points size:
+    <input id="pointSize" type="range" name="pointSize" min="1" max="100" value="10" step="1">
+    <div id="pointSizeValue">10</div>
+    <br>
+    <br>
+
+    Color-picker:
+      Points color:
+      <input id="colorPickerPoints" type="text" name="" value="">
+      Lines color:
+      <input id="colorPickerLines" type="text" name="" value="">
+      <button id="btnPicker">Enter</button>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.6/svg.min.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
